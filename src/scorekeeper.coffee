@@ -89,7 +89,8 @@ class ScoreKeeper
     messageIsSpam
 
   validate: (user, from) ->
-    user != from && user != "" && !@isSpam(user, from)
+    #user != from && user != "" && !@isSpam(user, from)
+    user != from && user != ""
 
   length: () ->
     @storage.log.length
